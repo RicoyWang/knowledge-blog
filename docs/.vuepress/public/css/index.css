@@ -1,0 +1,17 @@
+body .cardImgListContainer .card-list {
+  column-count: 3;
+  column-gap: 0;
+  counter-reset: item-counter;
+}
+
+body .cardImgListContainer .card-list .card-item {
+  box-sizing: border-box;
+  break-inside: avoid;
+  padding: 10px;
+  counter-increment: item-counter;
+  width: 200px;
+  
+}
+body .cardImgListContainer .card-list .card-item .box-img {
+  max-height: 180px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three Column Feed Layout</title>
+  <style>
+    .masonry {
+      column-count: 3;
+      column-gap: 0;
+      counter-reset: item-counter;
+    }
+
+    .item {
+      box-sizing: border-box;
+      break-inside: avoid;
+      padding: 10px;
+      counter-increment: item-counter;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="masonry">
+    <div class="item" style="height: 200px;">
+      <!-- 左栏内容 -->
+      <h2>Left Column</h2>
+      <p>Left column content goes here.</p>
+    </div>
+
+    <div class="item">
+      <!-- 中栏内容 -->
+      <h2>Middle Column</h2>
+      <p>Middle column content goes here.</p>
+    </div>
+
+    <div class="item">
+      <!-- 右栏内容 -->
+      <h2>Right Column</h2>
+      <p>Right column content goes here.</p>
+    </div>
+    <div class="item" style="height: 300px;">
+      <!-- 右栏内容 -->
+      <h2>Right Column</h2>
+      <p>Right column content goes here.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
