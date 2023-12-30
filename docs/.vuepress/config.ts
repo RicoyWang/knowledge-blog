@@ -42,11 +42,50 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
       {
         text: '知识库',
-        link: '/pages/c6b56a/',
+        link: '/pages/735385/',
         items: [
-          { text: '前端', link: '/pages/c6b56a/' },
-          { text: '资源', link: '/pages/97cb38/' },
-          { text: '感悟', link: '/pages/e57c78/' }
+          {
+            text: '个人体系',
+            link: '/pages/735385/',
+            items: [
+              { text: '个人体系总览', link: '/pages/735385/' },
+              { text: '框架', link: '/pages/190e2a/' },
+              { text: 'UI库', link: '/pages/f9f928/' },
+              { text: '工具', link: '/pages/419585/' },
+            ]
+          },
+          {
+            text: '技术栈',
+            link: '/pages/190e2a/',
+            items: [
+              { text: '前端开发总览', link: '/pages/a62752/' },
+              { text: '后端端开发总览', link: '/pages/aabe94/' },
+              { text: '数据库总览', link: '/pages/c996c8/' },
+            ]
+          },
+          {
+            text: '领域',
+            link: '/pages/3100d1/',
+            items: [
+              { text: '数字孪生', link: '/pages/575a77/' },
+              { text: '物联网', link: '/pages/dccad5/' },
+              { text: '数据中台', link: '/pages/7e43db/' },
+              { text: '技术中台', link: '/pages/f93cd4/' },
+              { text: 'APASS', link: '/pages/3100d1/' },
+              { text: 'SASS', link: '/pages/a767ae/' }
+            ]
+          },
+          {
+            text: '管理',
+            link: '/pages/d0fdf6/',
+            items: [
+              { text: '个人管理', link: '/pages/d0fdf6/' },
+              { text: 'PMP', link: '/pages/0c8ebb/' },
+              { text: '团队管理', link: '/pages/97cb38/' },
+              { text: '项目管理', link: '/pages/6fb7c8/' },
+              { text: '情绪管理', link: '/pages/746c04/' }
+            ]
+          }
         ]
       },
       {
@@ -236,8 +275,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
     extendFrontmatter: {
       author: {
-        name: 'xugaoyi',
-        link: 'https://github.com/xugaoyi'
+        name: 'RicoyWang',
+        link: 'https://github.com/RicoyWang'
       }
     },
 
@@ -276,7 +315,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       {
         // 你的选项
         chart: true,
-        include: true,
+        include: true
       }
     ],
     [
