@@ -259,21 +259,22 @@ function getCardImgListDOM(dataList, row, config) {
 
   let listDOM = ''
   dataList.forEach(item => {
+    console.log(item)
     listDOM += `
       <div class="card-item ${row ? 'row-' + row : ''}" >
         <a href="${withBase(item.link)}" target="${target}">
-          <div class="box-img" style="height: ${imgHeight}">
-              <img src="${withBase(item.img)}" class="no-zoom" style="object-fit: ${objectFit}">
-          </div>
-          <div class="box-info">
-              <p class="name">${item.name}</p>
-              ${item.desc ? `<p class="desc" style="-webkit-line-clamp: ${lineClamp}">${item.desc}</p>` : ''}
-          </div>
-
+        ${item.img ? `<div class="box-img" style="height: ${imgHeight}">
+        <img src="${withBase(item.img)}" class="no-zoom" style="object-fit: ${objectFit}">
+    </div>
+    <div class="box-info">
+       
+        ${item.desc ? `<p class="desc" style="-webkit-line-clamp: ${lineClamp}">${item.desc}</p>` : ''}
+    </div>` : ''}
           ${item.avatar || item.author ? `<div class="box-footer">
               ${item.avatar ? `<img src="${withBase(item.avatar)}" class="no-zoom">` : ''}
               ${item.author ? `<span>${item.author}</span>` : ''}
           </div>`: ''}
+           <p class="name">${item.name}</p>
         </a>
       </div>
     `
