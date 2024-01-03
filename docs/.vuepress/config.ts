@@ -37,7 +37,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           { text: '前端', link: '/pages/c6b56a/' },
           { text: '资源', link: '/pages/97cb38/' },
-          { text: '感悟', link: '/pages/e57c78/' }
+          { text: '感悟', link: '/pages/e57c78/' },
+          { text: '问答', link: '/pages/23469d/' },
+          { text: '方法论', link: '/pages/3d7388/' },
+          { text: '管理', link: '/pages/da99af/' },
+          { text: '数据结构算法', link: '/pages/c66e9d/' },
+          { text: '计算机原理', link: '/pages/351560/' },
+          { text: '图形学', link: '/pages/dc31e6/' }
         ]
       },
       {
@@ -86,6 +92,15 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
               { text: '情绪管理', link: '/pages/746c04/' }
             ]
           }
+        ]
+      },
+      {
+        text: '技多多',
+        link: '/pages/49bbe3/',
+        items: [
+          { text: '前端组件', link: '/pages/49bbe3/' },
+          { text: '后端组件', link: '/pages/f9d47a/' },
+          { text: '应用', link: '/pages/ff5129/' },
         ]
       },
       {
@@ -168,8 +183,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         link: '/pages/beb6c0bd8a66cea6/',
         items: [
           { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
-          { text: '资源', link: '/pages/eee83a9211a70f9d/' },
-          { text: 'Vue资源', link: '/pages/12df8ace52d493f6/' }
         ]
       },
       {
